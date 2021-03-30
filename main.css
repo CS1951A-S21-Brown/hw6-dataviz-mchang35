@@ -1,0 +1,95 @@
+.header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header > h3, h5 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Include any custom CSS styling here! */
+.body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.form {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #aa7dce;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #f38cf5;
+}
+
+.label {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.form {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 0;
+}
+
+.row {
+    align-items: center;
+    align-content: center;
+}
+
+.tooltip {
+    z-index: 50;
+    display: inline-block;
+    background-color: #f0e9f5;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 0.5px;
+    border-style: solid;
+    padding: 5px 0;
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: 50%;
+    margin-left: -180px;
+}
+
+.wa-header-label {
+    font-size: 30px;
+}
+
+.col-lg-6 > .node-notification {
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.col-lg-6 > .extra-credit-label {
+    font-size: 25px;
+}
