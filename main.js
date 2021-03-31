@@ -44,7 +44,7 @@ let svg3 = d3.select("#graph3")
 
 // graph 1: bar chart for count of top genres
 function setYear(start_year=MIN_YEAR, end_year=MAX_YEAR) {
-    d3.csv("./data/netflix.csv").then(function(data) { // for the genre data
+    d3.csv("/data/netflix.csv").then(function(data) { // for the genre data
         data = getGenreData(data, start_year, end_year);
         if (data == -1) {
             svg1 = clearAndReplaceSVG("#graph1");
@@ -122,7 +122,7 @@ function setYear(start_year=MIN_YEAR, end_year=MAX_YEAR) {
 }
 
 // graph 2: scatter plot with tooltip for average runtime by release year
-d3.csv("./data/netflix.csv").then(function(data) { // for the runtime data
+d3.csv("/data/netflix.csv").then(function(data) { // for the runtime data
     data = getRuntimeData(data);
     let extent = d3.extent(data, function(d) {return Date.parse(d.year)});
     let x = d3.scaleTime()
@@ -194,7 +194,7 @@ function setCriteriaForActorData(criteria=0) { // 0: by number of movies togethe
     if (criteria != 0) {
         threshold = DEFAULT_1_THRESHOLD;
     }
-    d3.csv("./data/netflix.csv").then(function(data) { // for the actor data
+    d3.csv("/data/netflix.csv").then(function(data) { // for the actor data
         data = getActorData(data, criteria, threshold);
 
         svg3 = clearAndReplaceSVG("#graph3");
